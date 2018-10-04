@@ -136,7 +136,7 @@ def num_points_scored(player_name)
 end
 end
 =end
-  home_players = game_hash.dig(:home,:players).flatten
+  home_players = game_hash.dig(:home,:players).to_a
   away_players = game_hash.dig(:home,:players).flatten
 
   home_players.each do |player, stat|

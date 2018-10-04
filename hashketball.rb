@@ -130,6 +130,7 @@ score = 0
           if name == player_name
             stat.each do |key, value|
               if key == :points
+                puts value
                 score = value
               end
             end

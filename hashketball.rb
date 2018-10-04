@@ -2,7 +2,7 @@ require "pry"
 
 
 def game_hash
-  hash = {
+  game_hash = {
     :home => {
       :team_name => "Brooklyn Nets",
       :colors => ["Black", "White"],
@@ -120,11 +120,6 @@ end
 
 
 def num_points_scored(player_name)
-  player_hash = game_hash[:away][:players]
-    test_player = ""
-    player_hash.each do |name, stat|
-      test_player << stat
-    return test_player
-  end
+  game_hash
 
 end

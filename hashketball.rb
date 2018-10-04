@@ -194,9 +194,9 @@ def player_numbers(team_name)
     team_data.each do |attribute, data|
       if attribute == :team_name && data == team_name
         data.each do |name, stat|
-            stat.each do |key, value|
-              if key == :shoe
-                return value
+          stat.each do |key, value|
+              if key == :number
+                jersey << value
               end
             end
           end

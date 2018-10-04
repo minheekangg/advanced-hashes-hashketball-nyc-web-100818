@@ -142,6 +142,7 @@ def num_points_scored(player_name)
     team_data.each do |attribute, data|
       if attribute == :players
         data.each do |name, stat|
+          if name == player_name
             stat.each do |key, value|
               if key == :shoe_size
                 return value

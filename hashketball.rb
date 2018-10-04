@@ -165,6 +165,7 @@ def team_colors(team_name)
     end
   end
   game_hash.each do |location, team_data|
+    puts curr_loc
     if location == curr_loc
       team_data.each do |attribute, data|
         if attribute == :colors

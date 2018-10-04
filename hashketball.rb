@@ -164,5 +164,13 @@ def team_colors(team_name)
       end
     end
   end
-  return game_hash[:curr_loc][:colors]
+  game_hash.each do |location, team_data|
+    if location == curr_loc
+      team_data.each do |attribute, data|
+        if attribute == :colors
+          return data
+        end
+      end
+    end
+  end
 end

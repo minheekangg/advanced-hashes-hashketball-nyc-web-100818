@@ -205,8 +205,7 @@ def player_numbers(team_name)
           data.each do |name, stat|
               stat.each do |key, value|
                 if key == :number
-                  puts value
-                  jersey << value
+                  return value
                 end
               end
             end

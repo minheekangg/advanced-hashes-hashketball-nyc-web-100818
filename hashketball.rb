@@ -147,7 +147,8 @@ def shoe_size(player_name)
                 return value
               end
             end
+          end
         end
       end
     end
-  end
+end

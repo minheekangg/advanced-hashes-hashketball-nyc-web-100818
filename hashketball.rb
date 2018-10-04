@@ -222,7 +222,7 @@ def player_stats(player_name)
         if attribute == :players
           data.each do |name, stat|
             if name == player_name
-              return data
+              return stat
             end
           end
         end

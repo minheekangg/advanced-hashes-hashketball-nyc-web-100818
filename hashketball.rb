@@ -140,6 +140,6 @@ end
   away_players = game_hash.dig(:home,:players).to_a.flatten
 
   home_players.each do |player, stat|
-    puts player
+    puts stat
   end
 end

@@ -137,3 +137,4 @@ end
 end
 =end
   puts game_hash.dig(:home,:players)
+end

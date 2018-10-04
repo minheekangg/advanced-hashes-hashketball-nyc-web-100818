@@ -164,5 +164,5 @@ curr_location = ""
       end
     end
   end
-  return game_hash[:curr_location][:colors]
+  return game_hash[:curr_location][:colors].values
 end

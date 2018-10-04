@@ -164,5 +164,5 @@ curr_location = ""
       end
     end
   end
-  puts game_hash[:curr_location][:colors]
+  puts game_hash[:curr_location]
 end

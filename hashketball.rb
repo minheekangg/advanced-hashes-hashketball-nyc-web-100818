@@ -137,5 +137,6 @@ end
 end
 =end
   players_hash = game_hash.dig(:home,:players).flatten
-  puts players_hash
+  if players_hash.has_key?(player_name)
+    puts true
 end

@@ -124,7 +124,7 @@ def num_points_scored(player_name)
         value.each do |name, stat|
           if name == player_name
             stat.each do |stat_class, stat_value|
-              if stat_class == :points
+              if stat_class == "points"
                 return stat_value
               end
             end

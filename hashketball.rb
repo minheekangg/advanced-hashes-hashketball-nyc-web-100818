@@ -206,6 +206,9 @@ def player_numbers(team_name)
               stat.each do |key, value|
                 if key == :number
                   jersey << value
+                end
+              end
+            end
         end
       end
     end

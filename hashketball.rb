@@ -13,7 +13,7 @@ def game_hash
           :steals => 3,
           :blocks => 1,
           :slam_dunks => 1,
-        },
+          },
         "Reggie Evans" => {
           :number => 30,
           :shoe => 14,
@@ -23,7 +23,7 @@ def game_hash
           :steals => 12,
           :blocks => 12,
           :slam_dunks => 7,
-        },
+          },
         "Brooke Lopez" => {
           :number => 11,
           :shoe => 17,
@@ -33,7 +33,7 @@ def game_hash
           :steals => 3,
           :blocks => 1,
           :slam_dunks => 15,
-        },
+          },
         "Mason Plumlee" => {
           :number => 1,
           :shoe => 19,
@@ -43,7 +43,7 @@ def game_hash
           :steals => 3,
           :blocks => 8,
           :slam_dunks => 5,
-        },
+          },
         "Jason Terry" => {
           :number => 31,
           :shoe => 15,
@@ -53,10 +53,9 @@ def game_hash
           :steals => 4,
           :blocks => 11,
           :slam_dunks => 1,
-        }
-        ]
-      }
-    },
+          }
+          ]
+      },
     :away => {
       :team_name => "Charlotte Hornets",
       :colors => ["Turquoise", "Purple"],

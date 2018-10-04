@@ -128,9 +128,9 @@ score = 0
       if attribute == :players
         data.each do |name, stat|
           if name == player_name
+            puts name
             stat.each do |key, value|
               if key == :points
-                puts key
                 score = value
               end
             end

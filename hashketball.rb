@@ -127,7 +127,6 @@ score = 0
     team_data.each do |attribute, data|
       if attribute == :players && data == player_name
         data.each do |name, stat|
-          if name == player_name
             stat.each do |key, value|
               if key == :points
                 return value

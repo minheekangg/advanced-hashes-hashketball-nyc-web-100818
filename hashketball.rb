@@ -120,7 +120,7 @@ end
 def num_points_scored(player_name)
  game_hash[:home][:players].each do |player, stat|
     if player == player_name
-      puts stat.fetch(:points)
+      puts stat
     end
 end
 end

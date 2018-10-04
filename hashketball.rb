@@ -118,15 +118,6 @@ end
 
 
 def num_points_scored(player_name)
-  game_hash.each do |team, classes|
-    classes.each do |each_class, value|
-      if each_class == "players"
-        players.each do |name, stats|
-          if players.has_key?(player_name)
-            return players.fetch(player_name)
-          end
-        end
-      end
-    end
-  end
+  if game_hash[:home][:players].has_key?(player_name)
+    return game_hash[:home][:players][:player_name].fetch(points)
 end

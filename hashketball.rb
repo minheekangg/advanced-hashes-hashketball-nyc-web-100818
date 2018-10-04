@@ -138,5 +138,5 @@ score = 0
       end
     end
   end
-
+return score
 end

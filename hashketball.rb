@@ -156,10 +156,11 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
+  curr_loc = ""
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if data == team_name
-        curr_loc = location.to_s
+        curr_loc = location
       end
     end
   end

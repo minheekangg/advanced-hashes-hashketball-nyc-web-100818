@@ -120,4 +120,6 @@ end
 def num_points_scored(player_name)
   if game_hash[:home][:players].has_key?(player_name)
     return game_hash[:home][:players][:player_name].fetch(points)
+  else
+    return game_hash[:away][:players][:player_name].fetch(points) 
 end

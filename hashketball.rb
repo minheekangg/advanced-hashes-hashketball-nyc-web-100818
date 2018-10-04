@@ -118,19 +118,10 @@ end
 
 
 def num_points_scored(player_name)
-  game_hash.each do |team_type, team_desc|
-    team_desc.each do |desc_class, value|
-      if desc_class == :players
-        value.each do |name, stat|
-          if name == player_name
-            stat.each do |stat_class, stat_value|
-              if stat_class == :points
-                puts "HERE"
-              end
-            end
-          end
-        end
-    end
+  game_hash.each do |location, team_data|
+    binding.pry
   end
-end
+
+
+
 end

@@ -131,7 +131,7 @@ score = 0
             stat.each do |key, value|
               if key == :points
                 score = value
-                puts score
+                puts value
               end
             end
           end

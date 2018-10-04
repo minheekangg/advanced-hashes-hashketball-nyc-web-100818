@@ -248,5 +248,5 @@ def big_shoe_rebounds
       end
     end
 shorted_shoe = shoe_hash.sort_by{|k,v| v}
-puts shorted_shoe[-1]
+puts shorted_shoe[-1].key
 end

@@ -114,3 +114,19 @@ def game_hash
     }
 }
 end
+
+
+
+def num_points_scored(player_name)
+  game_hash.each do |team, classes|
+    classes.each do |class, value|
+      if class == "players"
+        players.each do |name, stats|
+          if players.has_key?(player_name)
+            return players.fetch(player_name)
+          end
+        end
+      end
+    end
+  end
+end

@@ -202,7 +202,7 @@ def player_numbers(team_name)
     if location == curr_loc
       team_data.each do |attribute, data|
         if attribute == :players
-          puts attribute
+          puts data
           data.each do |name, stat|
               stat.each do |key, value|
                 if key == :number

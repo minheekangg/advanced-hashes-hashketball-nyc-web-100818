@@ -138,5 +138,4 @@ end
 =end
   players_hash = game_hash.dig(:home,:players).flatten
   puts players_hash.keys
-  end
 end

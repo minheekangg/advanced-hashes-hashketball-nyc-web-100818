@@ -256,7 +256,14 @@ big_shoe_player = shorted_shoe[-1].first
         data.each do |name, stat|
           if name == big_shoe_player
             stat.each do |key, value|
-              if key == :shoe
-                shoe_hash[name] = value
+              if key == :rebounds
+                return value
+              end
+            end
+          end
+        end
+      end
+    end
+  end
 
 end

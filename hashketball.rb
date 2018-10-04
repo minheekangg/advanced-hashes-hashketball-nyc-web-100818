@@ -126,12 +126,12 @@ score = 0
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if attribute == :players
+        puts data
         data.each do |name, stat|
           if name == player_name
             stat.each do |key, value|
               if key == :points
                 score = value
-                puts value
               end
             end
           end

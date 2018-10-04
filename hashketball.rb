@@ -1,24 +1,24 @@
 def game_hash
   hash = {
-    :home = {
-      :team_name = {
+    :home => {
+      :team_name => {
 
       },
-      :colors = {
+      :colors => {
 
       },
-      :players = {
+      :players => {
 
           }
     },
-    :away = {
-      :team_name = {
+    :away => {
+      :team_name => {
 
       },
-      :colors = {
+      :colors => {
 
       },
-      :players = {
+      :players => {
 
           }
     }

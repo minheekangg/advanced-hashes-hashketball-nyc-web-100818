@@ -195,12 +195,11 @@ def player_numbers(team_name)
     team_data.each do |attribute, data|
       if data == team_name
         curr_loc = location
-        puts curr_loc
       end
     end
   end
   game_hash.each do |location, team_data|
-    if location == curr_loc
+    if location == curr_loc && if team_data == :players
       team_data.each do |attribute, data|
         if attribute == :players
           data.each do |name, stat|

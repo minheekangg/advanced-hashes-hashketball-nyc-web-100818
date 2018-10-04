@@ -241,6 +241,7 @@ def big_shoe_rebounds
             stat.each do |key, value|
               if key == :shoe
                 shoe_hash[name] = value
+                puts shoe_hash
               end
             end
           end

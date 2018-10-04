@@ -160,6 +160,7 @@ curr_location = ""
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if data == team_name
+        puts data
         curr_location = location
       end
     end

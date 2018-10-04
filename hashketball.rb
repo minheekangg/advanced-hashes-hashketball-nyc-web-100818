@@ -164,5 +164,5 @@ def team_colors(team_name)
       end
     end
   end
-  return game_hash[:curr_loc][:colors]
+  puts game_hash[:curr_loc][:colors]
 end

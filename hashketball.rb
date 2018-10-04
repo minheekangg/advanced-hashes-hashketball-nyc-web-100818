@@ -122,5 +122,5 @@ end
 def num_points_scored(player_name)
   player_hash = game_hash[:away][:players]
     puts player_hash.keys.flatten
-    end
+
 end

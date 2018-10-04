@@ -156,12 +156,11 @@ def shoe_size(player_name)
 end
 
 def team_colors(team_name)
-
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if data == team_name
         curr_location = location
-        return game_hash[:curr_location][:colors]
+        return game_hash[:curr_location][:colors].values
       end
     end
   end

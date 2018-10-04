@@ -101,15 +101,15 @@ def game_hash
           :blocks => 1,
           :slam_dunks => 0,
         },
-        "Jason Terry" => {
-          :number => 31,
+        "Brendan Haywood" => {
+          :number => 33,
           :shoe => 15,
-          :points => 19,
-          :rebounds => 2,
-          :assists => 2,
-          :steals => 4,
-          :blocks => 11,
-          :slam_dunks => 1,
+          :points => 6,
+          :rebounds => 12,
+          :assists => 12,
+          :steals => 22,
+          :blocks => 5,
+          :slam_dunks => 12,
         }
         ]
       }

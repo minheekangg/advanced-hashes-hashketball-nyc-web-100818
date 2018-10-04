@@ -136,5 +136,6 @@ def num_points_scored(player_name)
 end
 end
 =end
-  players_hash = game_hash.dig(:home,:players)
+  players_hash = game_hash.dig(:home,:players).flatten
+  puts players_hash
 end

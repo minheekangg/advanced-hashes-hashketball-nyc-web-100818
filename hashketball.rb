@@ -121,7 +121,7 @@ end
 
 def num_points_scored(player_name)
 
-player_hash = game_hash[:home][:players]
+player_hash = game_hash[:home][:players][]
   end
 
 end

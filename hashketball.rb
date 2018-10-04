@@ -121,7 +121,7 @@ end
 
 def num_points_scored(player_name)
   player_hash = game_hash[:away][:players]
-    player_hashto_a.each do |name, stat|
+    player_hash.to_a.each do |name, stat|
       puts name
     end
 

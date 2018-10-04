@@ -125,7 +125,7 @@ score = 0
 
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
-      if attribute == :players
+      if attribute == :players && data == player_name
         data.each do |name, stat|
           if name == player_name
             stat.each do |key, value|

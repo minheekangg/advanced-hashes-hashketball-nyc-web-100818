@@ -161,7 +161,7 @@ def team_colors(team_name)
     team_data.each do |attribute, data|
       if data == team_name
         curr_loc = location
-        puts location
+        puts curr_loc
       end
     end
   end

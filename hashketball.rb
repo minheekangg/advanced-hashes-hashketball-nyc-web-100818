@@ -121,6 +121,10 @@ end
 
 def num_points_scored(player_name)
   player_hash = game_hash[:away][:players]
-    puts player_hash = hash?
+    test_player = []
+    player_hash.each do |name, stat|
+      test_player << stat
+    return test_player
+  end
 
 end

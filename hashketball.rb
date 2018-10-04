@@ -190,18 +190,24 @@ end
 
 def player_numbers(team_name)
   jersey = []
+  curr_loc = ""
   game_hash.each do |location, team_data|
     team_data.each do |attribute, data|
       if data == team_name
-        data.each do |name, stat|
-          stat.each do |key, value|
-              if key == :number
-                jersey << value
-              end
-            end
-          end
+        curr_loc = location
+      end
+    end
+  end
+  game_hash.each do |location, team_data|
+    if location == curr_loc
+      team_data.each do |attribute, data|
+        if attribute == :players
+          data.each do |name, stat|
+              stat.each do |key, value|
+                if key == :number
+                  jersey << value
         end
       end
     end
-  return jersey
+  end
 end

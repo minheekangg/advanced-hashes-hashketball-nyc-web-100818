@@ -118,6 +118,7 @@ end
 
 
 def num_points_scored(player_name)
+=begin
   game_hash.each do |team_type, team_desc|
     team_desc.each do |desc_class, value|
       if desc_class == :players
@@ -134,3 +135,5 @@ def num_points_scored(player_name)
   end
 end
 end
+=end
+  puts game_hash.dig(:home,:players)

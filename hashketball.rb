@@ -118,7 +118,7 @@ end
 
 
 def num_points_scored(player_name)
-  puts game_hash[:home][:players][:player_name]
+  puts game_hash[:home][:players].keys
   #  return game_hash[:home][:players][:player_name].fetch(points)
   #else
   #  return game_hash[:away][:players][:player_name].fetch(points)

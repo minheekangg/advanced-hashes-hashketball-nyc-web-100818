@@ -118,7 +118,18 @@ end
 
 
 def num_points_scored(player_name)
- game_hash[:home][:players].each do |player, stat|
-      puts stat
+  game_hash.each do |team_type, team_desc|
+    team_desc.each do |class, value|
+      if class == :players
+        value.each do |name, stat|
+          if name == player_name
+            stat.each do |stat_class, stat_value|
+              if stat_class == :points
+                return stat_value
+              end
+            end
+          end
+        end
     end
+  end
 end

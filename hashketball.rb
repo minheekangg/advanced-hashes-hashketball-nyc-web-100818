@@ -249,4 +249,14 @@ def big_shoe_rebounds
     end
 shorted_shoe = shoe_hash.sort_by{|k,v| v}
 big_shoe_player = shorted_shoe[-1].first
+
+  game_hash.each do |location, team_data|
+    team_data.each do |attribute, data|
+      if attribute == :players
+        data.each do |name, stat|
+          if name == big_shoe_player
+            stat.each do |key, value|
+              if key == :shoe
+                shoe_hash[name] = value
+
 end
